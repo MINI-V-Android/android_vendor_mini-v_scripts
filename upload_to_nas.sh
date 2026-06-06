@@ -20,7 +20,7 @@ fi
 
 # Output paths
 OUT_DIR="out/target/product/${DEVICE_NAME}"
-ZIP_FILE_PATH=$(ls ${OUT_DIR}/lineage-*.zip 2>/dev/null | head -n 1)
+ZIP_FILE_PATH=$(ls ${OUT_DIR}/lineage-*.zip 2>/dev/null | tail -n 1)
 
 # FTP path
 FTP_PATH="Jenkins/MINI-V Android/${DEVICE_NAME}"
